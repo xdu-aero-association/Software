@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BF99E99-676B-4DEC-A3F8-5F980AF16748}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ANOGround</RootNamespace>
+    <AssemblyName>ANOGround</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ANOGround.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.isAnalogLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\地面站雏形（油气储运V1.0版）\ANOGround\bin\Debug\AxInterop.isAnalogLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsoleApplication1">
+      <HintPath>F:\VS PROJECT\ConsoleApplication1\x64\Release\ConsoleApplication1.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoUtility">
+      <HintPath>..\GeoUtility\bin\Debug\GeoUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\地面站雏形（油气储运V1.0版）\ANOGround\bin\Debug\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.BGV2ActiveXLib">
+      <HintPath>..\packages\MeterCShapeExample\Interop.BGV2ActiveXLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.iProfessionalLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\地面站雏形（油气储运V1.0版）\ANOGround\bin\Debug\Interop.iProfessionalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.isAnalogLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\地面站雏形（油气储运V1.0版）\ANOGround\bin\Debug\Interop.isAnalogLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MAVLink">
+      <HintPath>..\Mavlink\bin\Debug\MAVLink.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjNet">
+      <HintPath>..\projNET\ProjNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.4\lib\net40\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.4\lib\net40\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.4\lib\net40\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tracking, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\无人机核心代码+PID+曲线\地面站\anoground-shangfu\ANOGround\bin\Debug\tracking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comms\CommsSerialPort.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comms\CommsSerialScan.cs" />
+    <Compile Include="Comms\ICommsSerial.cs" />
+    <Compile Include="Comms\MAVLinkSerialPort.cs" />
+    <Compile Include="Comms\Settings.cs" />
+    <Compile Include="Controls\ControlExt.cs" />
+    <Compile Include="Controls\CustomMessageBox.cs" />
+    <Compile Include="Controls\GradientBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientBG.Designer.cs" />
+    <Compile Include="Controls\IActivate.cs" />
+    <Compile Include="Controls\IDynamicParameterControl.cs" />
+    <Compile Include="Controls\InputBox.cs" />
+    <Compile Include="Controls\LabelWithPseudoOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LineSeparator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MyProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MyProgressBar.Designer.cs" />
+    <Compile Include="Controls\MyTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MyUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureBoxMouseOver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PictureBoxWithPseudoOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressReporterDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressReporterDialogue.designer.cs" />
+    <Compile Include="Controls\ProgressStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressStep.Designer.cs" />
+    <Compile Include="Controls\PseudoOpacityHelper.cs" />
+    <Compile Include="Controls\RadialGradientBG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RadialGradientBG.Designer.cs" />
+    <Compile Include="CurrentState.cs" />
+    <Compile Include="CurveX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurveX.Designer.cs" />
+    <Compile Include="CurveY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurveY.Designer.cs" />
+    <Compile Include="FlightPlanner\PlannParameInit.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GBL_FLAG.cs" />
+    <Compile Include="GmapClass\GMapMarkerImage.cs" />
+    <Compile Include="GmapCommon.cs" />
+    <Compile Include="mavlink\MAVLinkInterface.cs" />
+    <Compile Include="mavlink\MAVList.cs" />
+    <Compile Include="mavlink\MAVState.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealtimeCurveX.cs" />
+    <Compile Include="RealtimeCurveY.cs" />
+    <Compile Include="UpdateComUiThread.cs" />
+    <Compile Include="Strings.Designer.cs" />
+    <Compile Include="Strings.zh-Hans.Designer.cs" />
+    <Compile Include="Utilities\CircularBuffer.cs" />
+    <Compile Include="Utilities\CircularStream.cs" />
+    <Compile Include="Utilities\locationwp.cs" />
+    <Compile Include="Utilities\PointLatLngAlt.cs" />
+    <None Include="只加pi级调节版.md" />
+    <EmbeddedResource Include="Controls\GradientBG.resx" />
+    <EmbeddedResource Include="Controls\MyProgressBar.resx" />
+    <EmbeddedResource Include="Controls\ProgressReporterDialogue.resx" />
+    <EmbeddedResource Include="Controls\ProgressReporterDialogue.zh-Hans.resx" />
+    <EmbeddedResource Include="Controls\ProgressStep.resx" />
+    <EmbeddedResource Include="Controls\RadialGradientBG.resx" />
+    <EmbeddedResource Include="CurveX.resx" />
+    <EmbeddedResource Include="CurveY.resx" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Strings.resx" />
+    <EmbeddedResource Include="Strings.zh-Hans.resx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\didi.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planetracker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AvionicsInstrumentsControls\AvionicsInstrumentControlDemo.csproj">
+      <Project>{1d3163e6-dc65-4595-9d51-4fd9174f2f61}</Project>
+      <Name>AvionicsInstrumentControlDemo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\Resources\guagebg.jpg" />
+    <Content Include="Controls\Resources\iconWarning32.png" />
+    <Content Include="Controls\Resources\iconWarning48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

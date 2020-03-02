@@ -1,0 +1,9 @@
+[submodule "UAV-landing-platform-front-end"]
+	path = UAV-landing-platform-front-end
+	url = https://github.com/uav-operation-system/UAV-landing-platform-front-end
+[submodule "anoground-shangfu"]
+	path = anoground-shangfu
+	url = https://github.com/uav-operation-system/anoground-shangfu
+[submodule "the-old-picture-processing-code"]
+	path = the-old-picture-processing-code
+	url = https://github.com/uav-operation-system/the-old-picture-processing-code
