@@ -23,8 +23,8 @@ The most important thing shoud be attention to is this code copyright is my upcl
 
 update by wangqiang for the Unmanned aerial vehicle landing platform:
 
-About one and a half years ago,I complete this code.Maybe this code is not useful now for 吕瑞涛,but I think it can help push the processof the Unmanned aerial vehicle landing platform.
-The expolit tool is C++.
+About one and a half years ago,I complete this code.Maybe this code is not useful now for 吕瑞涛,but I think it can help push the process of the Unmanned aerial vehicle landing platform.
+The exploit tool is C++.
 
 # 西电航协研发部Github组织库规范
 ## 一．命名规范
