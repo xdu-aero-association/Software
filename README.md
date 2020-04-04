@@ -35,7 +35,7 @@ RouteTracker is based on pure pursuit.
 
 ### Visualization 视觉可视化
 
-简化了可视化操作，方便可视化路径规划结果以及传感器信息。
+### 简化了可视化操作，方便可视化路径规划结果以及传感器信息。
 Visualization in rviz has been wrapped into some simple steps by template class.So it will be more convenient to show your hard work.
 More visualiztion wrapper of rviz  is under working . Also ,the purpose of this is to simplify work not to heavy study content.
 ----------
