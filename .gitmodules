@@ -7,3 +7,6 @@
 [submodule "the-old-picture-processing-code"]
 	path = the-old-picture-processing-code
 	url = https://github.com/uav-operation-system/the-old-picture-processing-code
+[submodule "Multi-rotor-UAV-control-interface"]
+	path = Multi-rotor-UAV-control-interface
+	url = https://github.com/uav-operation-system/Multi-rotor-UAV-control-interface.git
